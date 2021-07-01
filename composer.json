@@ -1,0 +1,32 @@
+{
+  "name": "worawitj-idcard-validate/thai-id-card-validation",
+  "description": "A Laravel for validating Thai ID Card",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Wora J",
+      "email": "test_anley@hotmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.13",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "WorawitjIdcardValidate\\ThaiIdCardValidation\\": "src"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT"
+}
