@@ -34,9 +34,13 @@ $this->validate($request, [
 ถ้า validate ไม่ผ่านจะแสดงข้อความ `Please Check Your IdCard` เป็นค่าเริ่มต้ม ถ้าต้องการแก้ไข message สามารถ override
 class เพื่อแก้ message ได้
 
+```php
+use Worawitj\Validation\ThaiIdCardRule;
 
+// ใน controller
 $validator = Validator::make($request_data, ['id_card' => 'required|string|new ThaiIdCardRule('IdCard is not Valid',$request)']);
 
+```
 
 ```php
 use Worawitj\Validation\ThaiIdCardRule as Rule;
