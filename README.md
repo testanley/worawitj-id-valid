@@ -9,7 +9,7 @@ Validation Rule สำหรับตรวจสอบความถูกต�
 # <a id="installation"></a> ติดตั้ง
 
 ```
-composer require worawitj-id-valid/thai-id-card-validation
+composer require worawitj/validation
 ```
 
 # <a id="usage"></a> การใช้งาน

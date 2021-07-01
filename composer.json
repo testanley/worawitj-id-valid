@@ -1,5 +1,5 @@
 {
-  "name": "worawitj-idcard-validate/thai-id-card-validation",
+  "name": "worawitj/validation",
   "description": "A Laravel for validating Thai ID Card",
   "type": "library",
   "authors": [
@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "php": "^7.3|^8.0"
+    "php": "^8.0"
   },
   "require-dev": {
     "orchestra/testbench": "^6.13",
@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "WorawitjIdcardValidate\\ThaiIdCardValidation\\": "src"
+      "Worawitj\\Validation\\": "src"
     }
   },
   "scripts": {

@@ -1,37 +1,37 @@
 <?php
 
 
-use WorawitjIdcardValidate\ThaiIdCardValidation\NewThaiIdCard;
-use WorawitjIdcardValidate\ThaiIdCardValidation\NewThaiIdCardRule;
+use Worawitj\Validation\ThaiIdCard;
+use Worawitj\Validation\ThaiIdCardRule;
 
-class NewThaiIdCardTest extends Orchestra\Testbench\TestCase
+class ThaiIdCardTest extends Orchestra\Testbench\TestCase
 {
 
     /** @test */
     public function validate_pass()
     {
-        self::assertTrue((new NewThaiIdCard)->validate('9791910872358'));
-        self::assertTrue((new NewThaiIdCard)->validate('1005141246335'));
+        self::assertTrue((new ThaiIdCard)->validate('9791910872358'));
+        self::assertTrue((new ThaiIdCard)->validate('1005141246335'));
     }
 
     /** @test */
     public function validate_fail()
     {
-        self::assertFalse((new NewThaiIdCard)->validate('9791910872359'));
+        self::assertFalse((new ThaiIdCard)->validate('9791910872359'));
     }
 
     /** @test */
     public function rule_pass()
     {
-        self::assertTrue((new NewThaiIdCardRule)->passes('id_card', '9791910872358'));
-        self::assertTrue((new NewThaiIdCardRule)->passes('id_card', 9791910872358));
-        self::assertTrue((new NewThaiIdCardRule)->passes('id_card', '1005141246335'));
+        self::assertTrue((new ThaiIdCardRule)->passes('id_card', '9791910872358'));
+        self::assertTrue((new ThaiIdCardRule)->passes('id_card', 9791910872358));
+        self::assertTrue((new ThaiIdCardRule)->passes('id_card', '1005141246335'));
     }
 
     /** @test */
     public function rule_fail()
     {
-        self::assertFalse((new NewThaiIdCardRule)->passes('id_card', '9791910872359'));
+        self::assertFalse((new ThaiIdCardRule)->passes('id_card', '9791910872359'));
     }
 
 }
