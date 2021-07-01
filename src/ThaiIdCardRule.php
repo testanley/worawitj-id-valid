@@ -1,6 +1,6 @@
 <?php
 
-namespace Worawitj\WjValidation;
+namespace Worawitj\Validation;
 
 use Illuminate\Http\Request;
 use Illuminate\Contracts\Validation\Rule;
