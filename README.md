@@ -31,8 +31,8 @@ $this->validate($request, [
 
 # <a id="usage"></a> Validation Message
 
-ถ้า validate ไม่ผ่านจะแสดงข้อความ `Please Check Your IdCard` เป็นค่าเริ่มต้ม ถ้าต้องการแก้ไข message สามารถ override
-class เพื่อแก้ message ได้
+ถ้า validate ไม่ผ่านจะแสดงข้อความ `Please Check Your IdCard` เป็นค่าเริ่มต้ม 
+ถ้าต้องการแก้ไข message สามารถ override class เพื่อแก้ message ได้
 
 ```php
 use Worawitj\Validation\ThaiIdCardRule;
