@@ -10,8 +10,8 @@ class ThaiIdCard
         if(!$request){
             $id_card_type = 1;
         }
-        if(!empty($request['id_card_type'])){
-            $id_card_type = $request['id_card_type'];  // Retrieve status
+        if(!empty($request['customer_id_card_type'])){
+            $id_card_type = $request['customer_id_card_type'];  // Retrieve status
         } else {
             $id_card_type = 1;
         }
