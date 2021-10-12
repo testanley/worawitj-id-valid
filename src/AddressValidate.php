@@ -55,48 +55,48 @@ class AddressValidate
 
         if(empty($request['customer_address_province_name_th']) && empty($request['customer_address_province_name_en'])){
             $validate = false;
-            $error_msg .= "Please Check Your Customer Addres Province Name";
+            $error_msg .= "Please Check Your Customer Address Province Name";
         }
 
-        if(empty($request['customer_address_amphur_th']) && empty($request['customer_address_amphur_en'])){
+         if(empty($request['customer_address_amphur_name_th']) && empty($request['customer_address_amphur_name_en'])){
             $validate = false;
             if(!empty($error_msg)){
                 $error_msg .= ",";
             }
-            $error_msg .= "Please Check Your Customer Addres Amphur Name";
+            $error_msg .= "Please Check Your Customer Address Amphur Name";
         }
 
-        if(empty($request['customer_address_tumbon_th']) && empty($request['customer_address_tumbon_en'])){
+         if(empty($request['customer_address_tumbon_name_th']) && empty($request['customer_address_tumbon_name_en'])){
             $validate = false;
             if(!empty($error_msg)){
                 $error_msg .= ",";
             }
-            $error_msg .= "Please Check Your Customer Addres Tumbon Name";
+            $error_msg .= "Please Check Your Customer Address Tumbon Name";
         }
 
         if($request['send_policy_same_address_flag'] == "N"){
-            if(empty($request['send_policy_address_province_name_th']) && empty($request['send_policy_address_province_name_en'])){
+             if(empty($request['send_policy_address_province_name_th']) && empty($request['send_policy_address_province_name_en'])){
                 $validate = false;
                 if(!empty($error_msg)){
                     $error_msg .= ",";
                 }
-                $error_msg .= "Please Check Your Send Policy Addres Province Name";
+                $error_msg .= "Please Check Your Send Policy Address Province Name";
             }
 
-            if(empty($request['send_policy_address_amphur_th']) && empty($request['send_policy_address_amphur_en'])){
+            if(empty($request['send_policy_address_amphur_name_th']) && empty($request['send_policy_address_amphur_name_en'])){
                 $validate = false;
                 if(!empty($error_msg)){
                     $error_msg .= ",";
                 }
-                $error_msg .= "Please Check Your Send Policy Addres Amphur Name";
+                $error_msg .= "Please Check Your Send Policy Address Amphur Name";
             }
 
-            if(empty($request['send_policy_address_tumbon_th']) && empty($request['send_policy_address_tumbon_en'])){
+             if(empty($request['send_policy_address_tumbon_name_th']) && empty($request['send_policy_address_tumbon_name_en'])){
                 $validate = false;
                 if(!empty($error_msg)){
                     $error_msg .= ",";
                 }
-                $error_msg .= "Please Check Your Send Policy Addres Tumbon Name";
+                $error_msg .= "Please Check Your Send Policy Address Tumbon Name";
             }
         }
 
